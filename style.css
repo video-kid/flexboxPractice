@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 100vh;
+  /*dotyczy kontenera:*/
+  align-self: stretch;
+  /*rozciaga horyzontalnie przy col ^*/
+  /*dotyczy zawartosci:*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 400px;
+  color: white;
+  font-family: sans-serif;
+  background-image: url("bgcimg.jpg");
+  background-position: center right;
+  background-attachment: fixed;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul {
+  flex-basis: 90%;
+  display: flex;
+}
+
+nav > ul li {
+  flex-grow: 1;
+  list-style: none;
+  text-align: center;
+  padding: 7px;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+main > section {
+  min-height: 100vh;
+  border: 1px dotted pink;
+}
+
+footer {
+  height: 50vh;
+  align-self: stretch;
+  background-image: url("bgcimg.jpg");
+  background-position: bottom left;
+  display: flex;
+  justify-content: center;
+}
+
+footer .bg {
+  height: 100%;
+  background-color: rgba(25, 26, 27, 0.5);
+  flex-basis: 100%;
+}
+
+footer p {
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10%;
+}
